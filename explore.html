@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #131313;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            animation: slide 15s linear infinite;
+        }
+
+        .slide {
+            width: 20%;
+            height: 100%;
+            margin: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: #bdb1a8 30px 50pc 70px;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+
+            20% {
+                transform: translateX(0%);
+            }
+
+            25% {
+                transform: translateX(-100%);
+            }
+
+            45% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(-200%);
+            }
+
+            70% {
+                transform: translateX(-200%);
+            }
+
+            75% {
+                transform: translateX(-300%);
+            }
+
+            95% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(-400%);
+            }
+        }
+
+        .types {
+            color: #fff;
+        }
+
+        @keyframes animeText {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animated-text {
+            font-size: 50px;
+            margin: 30px;
+            font-weight: bold;
+            animation: animeText 2s ease-in-out;
+            color: white;
+            margin-left: 20px;
+            background: #ee0979;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right,
+                    #ff6a00,
+                    #ee0979);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right,
+                    #ff6a00,
+                    #ee0979);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -mo-text-fill-color: transparent;
+
+
+        }
+
+        @keyframes animeText {
+            5% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+
+
+        @keyframes animeText {
+            5% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+        }
+
+
+        .types {
+            margin: 20px;
+            font-size: 50px;
+            font-weight: bold;
+            animation: animeText 2s ease-in-out;
+            color: white;
+            background: #ee0979;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right,
+                    #ff6a00,
+                    #ee0979);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right,
+                    #ff6a00,
+                    #ee0979);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -mo-text-fill-color: transparent;
+
+        }
+
+        .startup {
+            color: #fff;
+            font: 200;
+            font-size: x-large;
+            margin: 15px;
+            background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+        }
+
+        .aaa {
+            font-size: large;
+            font-weight: bold;
+            font-weight: 400;
+            animation: animeText 2s ease-in-out;
+            color: white;
+            background: red;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right,
+                    #dd0d0dbe,
+                    #55aa05);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right,
+                    #bdb1a8,
+                    #f3bc07);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -mo-text-fill-color: transparent;
+
+        }
+
+        @keyframes animeText {
+            5% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+        }
+
+        .four {
+
+            font-size: large;
+            font-weight: bold;
+            font-weight: 400;
+            animation: animeText 2s ease-in-out;
+            color: white;
+
+
+            margin-top: 30px;
+            background: red;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right,
+                    #dd0d0dbe,
+                    #55aa05);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right,
+                    #bdb1a8,
+                    #f3bc07);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -mo-text-fill-color: transparent;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="types">
+            1 Simplify Complexity :
+        </div>
+        <div class="aaa">
+            Break down complex business concepts into simple,relatable terms to make learning more accessible for our
+            customers.
+           
+
+        </div>
+
+        <div class="animated-text"> 2 Comparative Analysis : </div>
+
+        <div class="four">The essence of a comparative analysis lies in its inherent commitment to objectivity and
+            rigorous inquiry. It refrains from being swayed by preconceived notions or biases, instead adhering
+            steadfastly to empirical evidence and methodical inquiry.
+
+          </div>
+
+        <div class="startup">
+            <div class="starttup">
+                As a startup, we are diligently working towards our vision, putting in relentless effort, and
+                continuously innovating to pave the way for our journey to becoming a thriving, influential industry
+                leader. Our commitment to hard work is the cornerstone of our ascent towards becoming a renowned and
+                impactful company.
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://play-lh.googleusercontent.com/AQtSF5Sl18yp3mQ2tcbOrBLekb7cyP3kyg5BB1uUuc55zfcnbkCDLHFTBwZfYiu1aDI=s256-rw" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_6gsjplTLwf1KXpFBGPjW3BWiuZTb_rPXGPsQUM8qUzQizq-iLo2ndkb35eYulfYoabA" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2016-08/24/full/1472021363-6508.jpg" alt="Image 3">
+                </div>
+            
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFNtETBEOJsDc6gRoLxmsrb8uek8oKac0lfiAh-QhROQZQ1ok33pQP0EKBCAW_Wh87ZQA" alt="Image 5">
+                </div>
+                
+                <div class="slide">
+                    <img src="http://yt3.googleusercontent.com/nfovxGynnTWHMBFQfUjZzbFrViXNa9MYLZXuRFXhWGAfwWwIBsqV_4B5A_LGu0sZlMenuimmsQ=s900-c-k-c0x00ffffff-no-rj" alt="Image 5">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
